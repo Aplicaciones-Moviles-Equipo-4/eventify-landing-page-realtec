@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Eventify es la plataforma donde anfitriones encuentran al organizador ideal y organizadores hacen crecer su negocio. Conecta, organiza y celebra con confianza.">
+    <meta name="keywords"
+        content="eventos, organización, anfitriones, organizadores, bodas, celebraciones, gestión de eventos, planificación de eventos">
+    <meta name="author" content="Realtec">
+    <link rel="icon" href="./assets/eventify-icon.png" type="image/png">
+    <title>Eventify - Landing page</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./script.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo"><a href="#hero"><img src="./assets/eventify-logo.png" alt="eventify-logo"></a></div>
+
+            <ul>
+                <li><a href="#hero" data-i18n="header.home"></a></li>
+                <li><a href="#about-the-product" data-i18n="header.about.the.product"></a></li>
+                <li><a href="#functionalities" data-i18n="header.functionalities"></a></li>
+                <li><a href="#benefits" data-i18n="header.benefits"></a></li>
+                <li><a href="#plans" data-i18n="header.plans"></a></li>
+                <li><a href="#about-the-team" data-i18n="header.about.the.team"></a></li>
+                <li><a class="btn-recurrent" href="https://eventify-webapp-frontend.web.app" target="_blank"  data-i18n="header.register"></a></li>
+            </ul>
+
+            <div class="language-switch">
+                <span>ES</span>
+                <label class="switch">
+                    <input type="checkbox" id="language-toggle">
+                    <span class="slider"></span>
+                </label>
+                <span>EN</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+
+    <section class="hero" id="hero">
+        <div class="hero-info">
+            <p class="title">Eventify</p>
+            <span class="slogan" data-i18n="hero.slogan"></span>
+            <p class="description" data-i18n="hero.description"></p>
+            <div class="call-to-action">
+                <a class="btn-action" href="https://eventify-webapp-frontend.web.app" target="_blank"
+                    data-i18n="hero.find.your.organizer"></a>
+                <a class="btn-action" href="https://eventify-webapp-frontend.web.app" target="_blank"
+                    data-i18n="hero.join.as.organizer"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the product -->
+    <section class="about-the-product" id="about-the-product">
+        <div class="video-about-the-product">
+            <iframe src="https://www.youtube.com/embed/RmXh-lrJ9Nw?si=PjaC8JQPlI8Y3j-L" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Functionalities -->
+    <section class="functionalities" id="functionalities">
+        <img src="./assets/functionalities-section-image.png" alt="functionalities-img" loading="lazy">
+        <div class="function-content">
+            <h2 data-i18n="functionalities.slogan"></h2>
+            <div class="function-info">
+                <div class="function-card">
+                    <h3 data-i18n="functionalities.organizers"></h3>
+                    <ul>
+                        <li data-i18n="functionalities.organizers.phrase.1"></li>
+                        <li data-i18n="functionalities.organizers.phrase.2"></li>
+                        <li data-i18n="functionalities.organizers.phrase.3"></li>
+                    </ul>
+                </div>
+                <div class="function-card">
+                    <h3 data-i18n="functionalities.hosts"></h3>
+                    <ul>
+                        <li data-i18n="functionalities.hosts.phrase.1"></li>
+                        <li data-i18n="functionalities.hosts.phrase.2"></li>
+                        <li data-i18n="functionalities.hosts.phrase.3"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Benefits -->
+    <section class="benefits" id="benefits">
+        <div class="benefits-content">
+            <h2 data-i18n="benefits.slogan"></h2>
+
+            <div class="benefits-info">
+                <div class="benefits-card">
+                    <h3 data-i18n="benefits.organizers"></h3>
+                    <ul>
+                        <li data-i18n="benefits.organizers.phrase.1"></li>
+                        <li data-i18n="benefits.organizers.phrase.2"></li>
+                        <li data-i18n="benefits.organizers.phrase.3"></li>
+                    </ul>
+                </div>
+                <div class="benefits-card">
+                    <h3 data-i18n="benefits.hosts"></h3>
+                    <ul>
+                        <li data-i18n="benefits.hosts.phrase.1"></li>
+                        <li data-i18n="benefits.hosts.phrase.2"></li>
+                        <li data-i18n="benefits.hosts.phrase.3"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/benefits-section-image.png" alt="benefits-img" loading="lazy">
+
+    </section>
+
+    <!-- Plans -->
+    <section class="plans" id="plans">
+        <h2 data-i18n="plans.title"></h2>
+        <h4 data-i18n="plans.description"></h4>
+        <div class="plan-content">
+            <div class="plan-card">
+                <h3 data-i18n="plans.option.1.title"></h3>
+                <span class="plan-price">S/. 300.00</span>
+                <p class="plan-time" data-i18n="plans.option.frecuency"></p>
+                <p class="plan-desc" data-i18n="plans.option.1.description"></p>
+                <ul class="plan-detail">
+                    <li data-i18n="plans.option.1.detail"></li>
+                </ul>
+                <a class="plan-card-btn" href="https://eventify-webapp-frontend.web.app" target="_blank"
+                    data-i18n="plans.option.button"></a>
+            </div>
+            <div class="plan-card">
+                <h3 data-i18n="plans.option.2.title"></h3>
+                <span class="plan-price">S/. 400.00</span>
+                <p class="plan-time" data-i18n="plans.option.frecuency"></p>
+                <p class="plan-desc" data-i18n="plans.option.2.description"></p>
+                <ul class="plan-detail">
+                    <li data-i18n="plans.option.2.detail"></li>
+                </ul>
+                <a class="plan-card-btn" href="https://eventify-webapp-frontend.web.app" target="_blank"
+                    data-i18n="plans.option.button"></a>
+            </div>
+            <div class="plan-card">
+                <h3 data-i18n="plans.option.3.title"></h3>
+                <span class="plan-price">S/. 500.00</span>
+                <p class="plan-time" data-i18n="plans.option.frecuency"></p>
+                <p class="plan-desc" data-i18n="plans.option.3.description"></p>
+                <ul class="plan-detail">
+                    <li data-i18n="plans.option.3.detail"></li>
+                </ul>
+                <a class="plan-card-btn" href="https://eventify-webapp-frontend.web.app" target="_blank"
+                    data-i18n="plans.option.button"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Team -->
+    <section class="about-the-team" id="about-the-team">
+        <h2 data-i18n="header.about.the.team"></h2>
+        <h4 data-i18n="about.the.team.slogan"></h4>
+        <div class="video-about-the-team">
+            <iframe src="https://www.youtube.com/embed/RmXh-lrJ9Nw?si=PjaC8JQPlI8Y3j-L" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="profile-list">
+            <div class="profile-item">
+                <img src="./assets/profile-nakasone-marco.jpeg" alt="profile2" loading="lazy">
+                <p class="profile-name">Nakasone Gomes, <br> Marco Antonio</p>
+                <p class="profile-role" data-i18n="team.profile.profession"></p>
+            </div>
+            <div class="profile-item">
+                <img src="./assets/profile-crisanto-deybbi.jpg" alt="profile3" loading="lazy">
+                <p class="profile-name">Crisanto Calle, <br> Deybbi Anderson</p>
+                <p class="profile-role" data-i18n="team.profile.profession"></p>
+            </div>
+            <div class="profile-item">
+                <img src="./assets/profile-armestar-matias.jpeg" alt="profile4" loading="lazy">
+                <p class="profile-name">Armestar Heredia, <br> Matias Gabriel</p>
+                <p class="profile-role" data-i18n="team.profile.profession"></p>
+            </div>
+            <div class="profile-item">
+                <img src="./assets/profile-duran-antonio.png" alt="profile5" loading="lazy">
+                <p class="profile-name">Duran Diaz, <br> Antonio Rodrigo</p>
+                <p class="profile-role" data-i18n="team.profile.profession"></p>
+            </div>
+            <div class="profile-item">
+                <img src="./assets/profile-teves-joan.jpeg" alt="profile5" loading="lazy">
+                <p class="profile-name">Teves Samaniego, <br> Joan Fernando</p>
+                <p class="profile-role" data-i18n="team.profile.profession"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <img class="logo" src="./assets/eventify-logo.png" alt="eventify-logo">
+            <div class="footer-contact">
+                <span data-i18n="footer.contact"></span>
+                <p><i class="fa-solid fa-envelope"></i> eventify@Realtec.com</p>
+                <p><i class="fa-solid fa-phone"></i> +51 983290166</p>
+            </div>
+            <div class="footer-navbar">
+                <ul>
+                    <li><a href="#hero" data-i18n="header.home"></a></li>
+                    <li><a href="#benefits" data-i18n="header.benefits"></a></li>
+                    <li><a href="#functionalities" data-i18n="header.functionalities"></a></li>
+                    <li><a href="#plans" data-i18n="header.plans"></a></li>
+                    <li><a href="#about-the-team" data-i18n="header.our.team"></a></li>
+                    <li><a href="#about-the-product" data-i18n="header.about.the.product"></a></li>
+                </ul>
+            </div>
+            <div class="footer-social-networks">
+                <p data-i18n="footer.social.networks"></p>
+                <div class="network-icons">
+                    <i class="fa-brands fa-x-twitter fa-2x"></i>
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                    <i class="fa-brands fa-youtube fa-2x"></i>
+                    <i class="fa-brands fa-github fa-2x"></i>
+                </div>
+
+            </div>
+        </div>
+        <p class="copyright" data-i18n="footer.copyright">Copyright © 2025 Eventify. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
