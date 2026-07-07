@@ -52,6 +52,8 @@ const translations = {
         "team.profile.profession" : "Ingeniero de Software",
         "footer.contact" : "Contacto",
         "footer.social.networks" : "Redes sociales",
+        "footer.privacy" : "Política de Privacidad",
+        "footer.terms" : "Términos y Condiciones",
         "footer.copyright" : "Copyright © 2025 Eventify. Todos los derechos reservados.",
     },
 
@@ -108,6 +110,8 @@ const translations = {
         "team.profile.profession" : "Software Engineer",
         "footer.contact" : "Contact",
         "footer.social.networks" : "Social networks",
+        "footer.privacy" : "Privacy Policy",
+        "footer.terms" : "Terms and Conditions",
         "footer.copyright" : "Copyright © 2025 Eventify. All rights reserved.",
     }
 };
