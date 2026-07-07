@@ -23,6 +23,10 @@
         <nav>
             <div class="logo"><a href="#hero"><img src="./assets/eventify-logo.png" alt="eventify-logo"></a></div>
 
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
             <ul>
                 <li><a href="#hero" data-i18n="header.home"></a></li>
                 <li><a href="#about-the-product" data-i18n="header.about.the.product"></a></li>
@@ -62,14 +66,18 @@
 
     <!-- About the product -->
     <section class="about-the-product" id="about-the-product">
-        <div class="video-about-the-product">
-            <iframe src="https://www.youtube.com/embed/rdZ3_zhgae4?si=OZFO0Z5IkvrqJgH1" title="YouTube video player" 
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <!-- Version mobile-->
-        <div class ="video-about-the-product">
-            <iframe width="360" height="639" src="https://www.youtube.com/embed/LRoAvvEL2ko" title="Eventify video app movil promocional (project)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h2 data-i18n="about.the.product.slogan"></h2>
+        <p class="section-desc" data-i18n="about.the.product.description"></p>
+        <div class="videos-container">
+            <div class="video-card desktop-video">
+                <iframe src="https://www.youtube.com/embed/rdZ3_zhgae4?si=OZFO0Z5IkvrqJgH1" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <!-- Version mobile-->
+            <div class="video-card mobile-video">
+                <iframe src="https://www.youtube.com/embed/LRoAvvEL2ko" title="Eventify video app movil promocional (project)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </div>
     </section>
 
@@ -143,7 +151,8 @@
                 <a class="plan-card-btn" href="https://eventify-webapp-frontend.web.app" target="_blank"
                     data-i18n="plans.option.button"></a>
             </div>
-            <div class="plan-card">
+            <div class="plan-card popular">
+                <div class="popular-badge" data-i18n="plans.popular"></div>
                 <h3 data-i18n="plans.option.2.title"></h3>
                 <span class="plan-price">S/. 400.00</span>
                 <p class="plan-time" data-i18n="plans.option.frecuency"></p>
@@ -185,26 +194,46 @@
                 <img src="./assets/profile-nakasone-marco.jpeg" alt="profile2" loading="lazy">
                 <p class="profile-name">Nakasone Gomes, <br> Marco Antonio</p>
                 <p class="profile-role" data-i18n="team.profile.profession"></p>
+                <div class="profile-socials">
+                    <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
             </div>
             <div class="profile-item">
                 <img src="./assets/profile-crisanto-deybbi.jpg" alt="profile3" loading="lazy">
                 <p class="profile-name">Crisanto Calle, <br> Deybbi Anderson</p>
                 <p class="profile-role" data-i18n="team.profile.profession"></p>
+                <div class="profile-socials">
+                    <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
             </div>
             <div class="profile-item">
                 <img src="./assets/profile-armestar-matias.jpeg" alt="profile4" loading="lazy">
                 <p class="profile-name">Armestar Heredia, <br> Matias Gabriel</p>
                 <p class="profile-role" data-i18n="team.profile.profession"></p>
+                <div class="profile-socials">
+                    <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
             </div>
             <div class="profile-item">
                 <img src="./assets/profile-duran-antonio.png" alt="profile5" loading="lazy">
                 <p class="profile-name">Duran Diaz, <br> Antonio Rodrigo</p>
                 <p class="profile-role" data-i18n="team.profile.profession"></p>
+                <div class="profile-socials">
+                    <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
             </div>
             <div class="profile-item">
                 <img src="./assets/profile-teves-joan.jpeg" alt="profile5" loading="lazy">
                 <p class="profile-name">Teves Samaniego, <br> Joan Fernando</p>
                 <p class="profile-role" data-i18n="team.profile.profession"></p>
+                <div class="profile-socials">
+                    <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
             </div>
         </div>
     </section>

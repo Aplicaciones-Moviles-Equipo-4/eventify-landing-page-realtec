@@ -55,6 +55,7 @@ const translations = {
         "footer.privacy" : "Política de Privacidad",
         "footer.terms" : "Términos y Condiciones",
         "footer.copyright" : "Copyright © 2025 Eventify. Todos los derechos reservados.",
+        "plans.popular": "Popular",
     },
 
     en: {
@@ -113,6 +114,7 @@ const translations = {
         "footer.privacy" : "Privacy Policy",
         "footer.terms" : "Terms and Conditions",
         "footer.copyright" : "Copyright © 2025 Eventify. All rights reserved.",
+        "plans.popular": "Popular",
     }
 };
 
@@ -134,18 +136,50 @@ function changeLanguage(language){
 
 }
 
-toggleButton.addEventListener("click", () => {
-
-    currentLanguage = currentLanguage === "es" ? "en" : "es";
-
+toggleButton.addEventListener("change", () => {
+    currentLanguage = toggleButton.checked ? "en" : "es";
     changeLanguage(currentLanguage);
+});
 
-    toggleButton.textContent =
-        currentLanguage === "es"
-        ? "🇪🇸 ES"
-        : "🇺🇸 EN";
+// Mobile menu toggle
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector("nav ul");
 
+if (menuToggle && navLinks) {
+    menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        const icon = menuToggle.querySelector("i");
+        if (icon) {
+            icon.classList.toggle("fa-bars");
+            icon.classList.toggle("fa-xmark");
+        }
+    });
+
+    // Close menu when clicking a link
+    navLinks.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            const icon = menuToggle.querySelector("i");
+            if (icon) {
+                icon.classList.add("fa-bars");
+                icon.classList.remove("fa-xmark");
+            }
+        });
+    });
+}
+
+// Scroll navigation transition
+window.addEventListener("scroll", () => {
+    const nav = document.querySelector("nav");
+    if (window.scrollY > 50) {
+        nav.classList.add("scrolled");
+    } else {
+        nav.classList.remove("scrolled");
+    }
 });
 
 // Idioma inicial
+if (toggleButton) {
+    currentLanguage = toggleButton.checked ? "en" : "es";
+}
 changeLanguage(currentLanguage);
